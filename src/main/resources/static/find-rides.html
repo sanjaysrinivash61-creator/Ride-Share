@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Ride - RideShare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">RideShare</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="offer-ride.html">Offer Ride</a>
+        <a href="find-rides.html" class="active">Find Ride</a>
+        <a href="my-rides.html">My Rides</a>
+        <a href="requests.html">Requests</a>
+    </nav>
+</header>
+
+<div class="page-container wide">
+
+    <div class="form-card">
+
+        <h1>Find a Ride</h1>
+
+        <div class="search-grid">
+
+            <div>
+                <label>From</label>
+                <input type="text" id="searchOrigin"
+                       placeholder="Starting point">
+            </div>
+
+            <div>
+                <label>To</label>
+                <input type="text" id="searchDestination"
+                       placeholder="Destination">
+            </div>
+
+            <div>
+                <label>From Time</label>
+                <input type="datetime-local" id="fromTime">
+            </div>
+
+            <div>
+                <label>To Time</label>
+                <input type="datetime-local" id="toTime">
+            </div>
+
+        </div>
+
+        <button onclick="searchRides()" class="btn primary">
+            Search Rides
+        </button>
+
+    </div>
+
+    <div id="rideResults" class="results"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
